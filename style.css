@@ -1,0 +1,164 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Noto Sans JP', sans-serif;
+}
+
+.sec1 {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-color: #510a09;
+}
+
+.menu-cont {
+    display: none;
+}
+
+.custom-shape-divider-bottom-1604627448 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1604627448 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 180px;
+    transform: rotateY(180deg);
+}
+
+.custom-shape-divider-bottom-1604627448 .shape-fill {
+    fill: #FFFFFF;
+}
+
+nav {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    padding: 3vh 4vw;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+}
+.logo {
+    font-size: 1.7em;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+}
+
+nav ul {
+    display: flex;
+    position: relative;
+}
+
+nav ul li {
+    text-transform: uppercase;
+    list-style: none;
+    margin-left: 30px;
+    font-size: 1em;
+}
+
+nav ul li a {
+    cursor: pointer !important;
+}
+
+.web-desc {
+    position: relative;
+    padding-top: 20vh;
+    padding-left: 8vw;
+    color: white;
+    max-width: 600px;
+    z-index: 10 !important;
+}
+
+.web-desc div:nth-of-type(1) {
+    font-size: 2em;
+    margin-bottom: 15px;
+}
+
+.web-desc div:nth-of-type(2) {
+    font-size: 1.1em;
+    line-height: 1.2em;
+    word-wrap: wrap;
+    margin-right: 20px;
+    font-weight: 400;
+}
+
+.web-desc div:nth-of-type(3) {
+    padding-top: 30px;
+}
+
+.web-desc div:nth-of-type(3) a {
+    color: black;
+    background: white;
+    padding: 10px 30px;
+    border: none;
+    cursor: pointer;
+    border-radius: 15px;
+    font-size: larger;
+}
+
+.illustration {
+    position: absolute;
+    bottom: 0;
+    right: 10vw;
+    top: 0;
+    height: 85vh; 
+    max-width: 90%;
+}
+
+@media (max-width: 750px) {
+    
+nav ul {
+    display: flex;
+    position: absolute;
+    justify-content: center;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100%;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    z-index: 100;
+    background-color: #510a09;
+}
+
+nav ul li {
+    padding-bottom: 12px;
+}
+
+.menu-cont {
+    position: relative;
+    z-index: 1000;
+    color: white;
+    display: flex;
+    flex-direction: row-reverse;
+    padding: 3vh 40px;
+    width: 100%;
+}
+
+.menu {
+    width: 30px;
+}
+
+.menu i {
+    cursor: pointer;
+    font-size: 30px;
+    align-self: center;
+}
+
+}
